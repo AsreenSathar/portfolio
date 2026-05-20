@@ -1,0 +1,222 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+/* Root Variables */
+:root {
+  --color-primary: #9f7aea;
+  --color-secondary: #c8a2c8;
+  --color-accent: #f9a8d4;
+  --color-bg: #f8f5ff;
+  --color-bg-dark: #0f0f1a;
+  --color-text-dark: #1e1e2f;
+  --color-text-light: #ffffff;
+  --color-soft-border: rgba(255, 255, 255, 0.2);
+
+  color-scheme: light;
+}
+
+html.dark {
+  color-scheme: dark;
+  --color-bg: #0f0f1a;
+  --color-text-dark: #f1f5f9;
+  --color-text-light: #1e1e2f;
+}
+
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text-dark);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  overflow-x: hidden;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+h1 {
+  font-size: 3.75rem;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: 2.25rem;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 1.875rem;
+  line-height: 1.2;
+}
+
+h4 {
+  font-size: 1.5rem;
+  line-height: 1.33;
+}
+
+p {
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+/* Links */
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--color-primary);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, var(--color-primary), var(--color-accent));
+  border-radius: 6px;
+  border: 3px solid var(--color-bg);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, var(--color-secondary), var(--color-primary));
+}
+
+/* Firefox Scrollbar */
+* {
+  scrollbar-color: var(--color-primary) var(--color-bg);
+  scrollbar-width: thin;
+}
+
+/* Focus Styles */
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Selection */
+::selection {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Utility Classes */
+.glass-effect {
+  background: rgba(248, 245, 255, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+html.dark .glass-effect {
+  background: rgba(15, 15, 26, 0.7);
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-border {
+  position: relative;
+  border: 2px solid transparent;
+  background: linear-gradient(rgba(248, 245, 255, 0.7), rgba(248, 245, 255, 0.7)) padding-box,
+    linear-gradient(135deg, var(--color-primary), var(--color-accent)) border-box;
+}
+
+html.dark .gradient-border {
+  background: linear-gradient(rgba(15, 15, 26, 0.7), rgba(15, 15, 26, 0.7)) padding-box,
+    linear-gradient(135deg, var(--color-secondary), var(--color-accent)) border-box;
+}
+
+.glow-effect {
+  box-shadow: 0 0 30px rgba(159, 122, 234, 0.4);
+}
+
+.glow-effect:hover {
+  box-shadow: 0 0 50px rgba(159, 122, 234, 0.6);
+}
+
+.floating-animation {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+  }
+}
+
+/* Print Styles */
+@media print {
+  body {
+    background-color: white;
+    color: black;
+  }
+
+  a {
+    color: black;
+  }
+
+  .glass-effect {
+    background: white;
+    border: none;
+  }
+}

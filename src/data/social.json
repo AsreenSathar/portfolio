@@ -1,0 +1,44 @@
+[
+  {
+    "id": "social-1",
+    "platform": "GitHub",
+    "url": "https://github.com/yourprofile",
+    "icon": "FaGithub",
+    "label": "Follow on GitHub"
+  },
+  {
+    "id": "social-2",
+    "platform": "LinkedIn",
+    "url": "https://linkedin.com/in/yourprofile",
+    "icon": "FaLinkedin",
+    "label": "Connect on LinkedIn"
+  },
+  {
+    "id": "social-3",
+    "platform": "Twitter",
+    "url": "https://twitter.com/yourprofile",
+    "icon": "FaTwitter",
+    "label": "Follow on Twitter"
+  },
+  {
+    "id": "social-4",
+    "platform": "Instagram",
+    "url": "https://instagram.com/yourprofile",
+    "icon": "FaInstagram",
+    "label": "Follow on Instagram"
+  },
+  {
+    "id": "social-5",
+    "platform": "Email",
+    "url": "mailto:your.email@example.com",
+    "icon": "FaEnvelope",
+    "label": "Send an Email"
+  },
+  {
+    "id": "social-6",
+    "platform": "WhatsApp",
+    "url": "https://wa.me/1234567890",
+    "icon": "FaWhatsapp",
+    "label": "Message on WhatsApp"
+  }
+]

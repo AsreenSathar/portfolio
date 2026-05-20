@@ -1,0 +1,42 @@
+[
+  {
+    "id": "edu-1",
+    "institution": "University of Technology",
+    "degree": "Bachelor of Science",
+    "field": "Computer Science",
+    "startDate": "2019-09",
+    "endDate": "2023-05",
+    "gpa": 3.8,
+    "achievements": [
+      "Dean's List - All Semesters",
+      "Best Project Award 2022",
+      "Scholarship for Academic Excellence"
+    ]
+  },
+  {
+    "id": "edu-2",
+    "institution": "Online Academy",
+    "degree": "Full Stack Web Development Bootcamp",
+    "field": "Web Development",
+    "startDate": "2023-01",
+    "endDate": "2023-06",
+    "gpa": 4.0,
+    "achievements": [
+      "Completed 500+ hours of coding",
+      "Top 5% of the cohort",
+      "Final project featured on platform"
+    ]
+  },
+  {
+    "id": "edu-3",
+    "institution": "Design Institute",
+    "degree": "Certificate",
+    "field": "UI/UX Design",
+    "startDate": "2022-06",
+    "endDate": "2022-11",
+    "achievements": [
+      "Completed 8 major design projects",
+      "Learned Figma and design principles"
+    ]
+  }
+]

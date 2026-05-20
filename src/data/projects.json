@@ -1,0 +1,110 @@
+[
+  {
+    "id": "project-1",
+    "title": "E-Commerce Platform",
+    "description": "Full-stack e-commerce solution with modern UI and seamless payment integration",
+    "longDescription": "A comprehensive e-commerce platform built with React and Node.js featuring product catalog, shopping cart, secure checkout, and admin dashboard for inventory management.",
+    "image": "https://images.unsplash.com/photo-1661956600684-40bddde3c6c7?w=800&h=600&fit=crop",
+    "technologies": ["React", "Node.js", "MongoDB", "Stripe", "Tailwind CSS"],
+    "links": {
+      "live": "https://example.com",
+      "github": "https://github.com/example",
+      "demo": "https://demo.example.com"
+    },
+    "featured": true,
+    "year": 2023,
+    "achievements": [
+      "Improved checkout conversion by 35%",
+      "Reduced page load time by 50%",
+      "Handled 1000+ concurrent users"
+    ]
+  },
+  {
+    "id": "project-2",
+    "title": "Task Management App",
+    "description": "Collaborative task management tool with real-time updates and team features",
+    "longDescription": "Real-time task management application with team collaboration, project organization, and productivity analytics.",
+    "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=600&fit=crop",
+    "technologies": ["React", "Firebase", "Tailwind CSS", "Redux"],
+    "links": {
+      "live": "https://example.com",
+      "github": "https://github.com/example"
+    },
+    "featured": true,
+    "year": 2023,
+    "achievements": [
+      "5000+ active users",
+      "Real-time sync using WebSockets",
+      "Mobile responsive design"
+    ]
+  },
+  {
+    "id": "project-3",
+    "title": "Weather Dashboard",
+    "description": "Beautiful weather dashboard with real-time data and forecasts",
+    "longDescription": "Interactive weather application providing real-time weather data, forecasts, and personalized alerts.",
+    "image": "https://images.unsplash.com/photo-1592078615290-033ee584e267?w=800&h=600&fit=crop",
+    "technologies": ["React", "OpenWeather API", "Framer Motion", "Tailwind CSS"],
+    "links": {
+      "live": "https://example.com",
+      "github": "https://github.com/example"
+    },
+    "featured": false,
+    "year": 2022,
+    "achievements": [
+      "Smooth animations with Framer Motion",
+      "Accurate weather forecasting",
+      "Cross-platform compatibility"
+    ]
+  },
+  {
+    "id": "project-4",
+    "title": "Social Media Analytics",
+    "description": "Analytics dashboard for social media performance tracking",
+    "image": "https://images.unsplash.com/photo-1460925895917-adf4e565db18?w=800&h=600&fit=crop",
+    "technologies": ["React", "Chart.js", "Node.js", "PostgreSQL"],
+    "links": {
+      "github": "https://github.com/example"
+    },
+    "featured": false,
+    "year": 2022,
+    "achievements": [
+      "Real-time analytics dashboard",
+      "Multi-platform data aggregation"
+    ]
+  },
+  {
+    "id": "project-5",
+    "title": "Portfolio Website",
+    "description": "Premium animated portfolio showcasing web development skills",
+    "image": "https://images.unsplash.com/photo-1517694712202-14319c7be2e2?w=800&h=600&fit=crop",
+    "technologies": ["React", "Vite", "Tailwind CSS", "Framer Motion"],
+    "links": {
+      "live": "https://example.com",
+      "github": "https://github.com/example"
+    },
+    "featured": false,
+    "year": 2024,
+    "achievements": [
+      "Lighthouse score 98+",
+      "Smooth animations",
+      "Mobile responsive"
+    ]
+  },
+  {
+    "id": "project-6",
+    "title": "Blog Platform",
+    "description": "Full-featured blogging platform with CMS capabilities",
+    "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&h=600&fit=crop",
+    "technologies": ["Next.js", "MDX", "Prisma", "PostgreSQL"],
+    "links": {
+      "live": "https://example.com"
+    },
+    "featured": false,
+    "year": 2023,
+    "achievements": [
+      "Content management system",
+      "SEO optimized"
+    ]
+  }
+]

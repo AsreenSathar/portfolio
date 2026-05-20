@@ -1,0 +1,130 @@
+[
+  {
+    "id": "react",
+    "name": "React",
+    "category": "frontend",
+    "icon": "FaReact",
+    "level": 9,
+    "description": "Building dynamic web applications with hooks, context, and modern patterns"
+  },
+  {
+    "id": "typescript",
+    "name": "TypeScript",
+    "category": "frontend",
+    "icon": "SiTypescript",
+    "level": 8,
+    "description": "Type-safe JavaScript development for scalable applications"
+  },
+  {
+    "id": "tailwind",
+    "name": "Tailwind CSS",
+    "category": "frontend",
+    "icon": "SiTailwindcss",
+    "level": 9,
+    "description": "Utility-first CSS framework for rapid UI development"
+  },
+  {
+    "id": "javascript",
+    "name": "JavaScript (ES6+)",
+    "category": "frontend",
+    "icon": "SiJavascript",
+    "level": 9,
+    "description": "Modern JavaScript with async/await, destructuring, and ES modules"
+  },
+  {
+    "id": "html",
+    "name": "HTML5",
+    "category": "frontend",
+    "icon": "SiHtml5",
+    "level": 9,
+    "description": "Semantic HTML markup and web standards"
+  },
+  {
+    "id": "css",
+    "name": "CSS3",
+    "category": "frontend",
+    "icon": "SiCss3",
+    "level": 9,
+    "description": "Advanced CSS with flexbox, grid, animations, and responsive design"
+  },
+  {
+    "id": "framer",
+    "name": "Framer Motion",
+    "category": "frontend",
+    "icon": "FaFileVideo",
+    "level": 8,
+    "description": "Smooth animations and interactive motion design"
+  },
+  {
+    "id": "nodejs",
+    "name": "Node.js",
+    "category": "backend",
+    "icon": "SiNodedotjs",
+    "level": 7,
+    "description": "Server-side JavaScript runtime and backend development"
+  },
+  {
+    "id": "express",
+    "name": "Express.js",
+    "category": "backend",
+    "icon": "SiExpress",
+    "level": 7,
+    "description": "Fast, minimalist web framework for Node.js"
+  },
+  {
+    "id": "mongodb",
+    "name": "MongoDB",
+    "category": "backend",
+    "icon": "SiMongodb",
+    "level": 7,
+    "description": "NoSQL database for flexible data storage"
+  },
+  {
+    "id": "postgresql",
+    "name": "PostgreSQL",
+    "category": "backend",
+    "icon": "SiPostgresql",
+    "level": 7,
+    "description": "Relational database with advanced features"
+  },
+  {
+    "id": "git",
+    "name": "Git & GitHub",
+    "category": "tools",
+    "icon": "SiGit",
+    "level": 9,
+    "description": "Version control and collaborative development"
+  },
+  {
+    "id": "vscode",
+    "name": "VS Code",
+    "category": "tools",
+    "icon": "SiVisualstudiocode",
+    "level": 9,
+    "description": "Modern code editor with extensions and debugging"
+  },
+  {
+    "id": "figma",
+    "name": "Figma",
+    "category": "design",
+    "icon": "SiFigma",
+    "level": 8,
+    "description": "UI/UX design and prototyping tool"
+  },
+  {
+    "id": "adobe",
+    "name": "Adobe Creative Suite",
+    "category": "design",
+    "icon": "SiAdobe",
+    "level": 7,
+    "description": "Photoshop, Illustrator, XD for design and assets"
+  },
+  {
+    "id": "webpack",
+    "name": "Webpack & Vite",
+    "category": "tools",
+    "icon": "SiWebpack",
+    "level": 8,
+    "description": "Module bundlers and build optimization"
+  }
+]
