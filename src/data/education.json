@@ -1,42 +1,72 @@
 [
   {
-    "id": "edu-1",
-    "institution": "University of Technology",
-    "degree": "Bachelor of Science",
+    "id": "edu-msc",
+    "institution": "Bharathi Vidyapeeth",
+    "degree": "Master of Science (M.Sc), Computer Science",
     "field": "Computer Science",
-    "startDate": "2019-09",
-    "endDate": "2023-05",
-    "gpa": 3.8,
-    "achievements": [
-      "Dean's List - All Semesters",
-      "Best Project Award 2022",
-      "Scholarship for Academic Excellence"
-    ]
+    "startDate": "2025",
+    "endDate": "2027",
+    "achievements": [],
+    "gpa": null
   },
   {
-    "id": "edu-2",
-    "institution": "Online Academy",
-    "degree": "Full Stack Web Development Bootcamp",
-    "field": "Web Development",
-    "startDate": "2023-01",
-    "endDate": "2023-06",
-    "gpa": 4.0,
-    "achievements": [
-      "Completed 500+ hours of coding",
-      "Top 5% of the cohort",
-      "Final project featured on platform"
-    ]
+    "id": "edu-bcs",
+    "institution": "St. Mira's College For Girls",
+    "degree": "Bachelor of Computer Science (B.C.S.)",
+    "field": "Computer Science",
+    "startDate": "2022",
+    "endDate": "2025",
+    "achievements": [],
+    "gpa": null
   },
   {
-    "id": "edu-3",
-    "institution": "Design Institute",
-    "degree": "Certificate",
-    "field": "UI/UX Design",
-    "startDate": "2022-06",
-    "endDate": "2022-11",
-    "achievements": [
-      "Completed 8 major design projects",
-      "Learned Figma and design principles"
-    ]
+    "id": "edu-hsc",
+    "institution": "HSC – Science",
+    "degree": "Higher Secondary Certificate (HSC)",
+    "field": "Science",
+    "startDate": "2022",
+    "endDate": "2022",
+    "achievements": ["Percentage: 60%"],
+    "gpa": null
+  },
+  {
+    "id": "edu-ssc",
+    "institution": "Don Bosco High School",
+    "degree": "Secondary School Certificate (SSC)",
+    "field": "General",
+    "startDate": "2020",
+    "endDate": "2020",
+    "achievements": ["Percentage: 79%"],
+    "gpa": null
+  },
+  {
+    "id": "exp-1",
+    "institution": "Sharify Adverts",
+    "degree": "Social Media Marketing Internship",
+    "field": "Virtual Internship",
+    "startDate": "Jan 2024",
+    "endDate": "Feb 2024",
+    "achievements": [],
+    "gpa": null
+  },
+  {
+    "id": "exp-2",
+    "institution": "Hamari Phechan",
+    "degree": "Volunteering Internship",
+    "field": "Virtual Internship",
+    "startDate": "Jul 2023",
+    "endDate": "Aug 2023",
+    "achievements": [],
+    "gpa": null
+  },
+  {
+    "id": "exp-3",
+    "institution": "InAmigos",
+    "degree": "Virtual Volunteering Internship",
+    "field": "Remote Internship",
+    "startDate": "Jul 2023",
+    "endDate": "Aug 2023",
+    "achievements": [],
+    "gpa": null
   }
 ]

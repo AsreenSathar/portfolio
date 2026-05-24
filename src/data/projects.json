@@ -1,110 +1,47 @@
 [
   {
     "id": "project-1",
-    "title": "E-Commerce Platform",
-    "description": "Full-stack e-commerce solution with modern UI and seamless payment integration",
-    "longDescription": "A comprehensive e-commerce platform built with React and Node.js featuring product catalog, shopping cart, secure checkout, and admin dashboard for inventory management.",
-    "image": "https://images.unsplash.com/photo-1661956600684-40bddde3c6c7?w=800&h=600&fit=crop",
-    "technologies": ["React", "Node.js", "MongoDB", "Stripe", "Tailwind CSS"],
+    "title": "Automatic Job Matching System",
+    "description": "Tech Stack: PHP, HTML, CSS, WAMP, MySQL",
+    "longDescription": "Developed a web-based Resume Builder and Automatic Job Matching System that helps job seekers create resumes and connect with suitable job opportunities. The system allows users to register, build resumes dynamically, and apply for jobs, while companies can post job requirements and view matched candidate profiles. Implemented keyword-based resume matching to automatically connect resumes with relevant job postings. Designed responsive user interfaces using HTML and CSS and managed backend operations and database connectivity using PHP and MySQL on the WAMP server environment.",
+    "image": "https://images.unsplash.com/photo-1521790797524-b2497295b8a0?w=800&h=600&fit=crop",
+    "technologies": ["PHP", "HTML", "CSS", "WAMP", "MySQL"],
     "links": {
-      "live": "https://example.com",
-      "github": "https://github.com/example",
-      "demo": "https://demo.example.com"
+      "live": "",
+      "github": ""
     },
     "featured": true,
     "year": 2023,
     "achievements": [
-      "Improved checkout conversion by 35%",
-      "Reduced page load time by 50%",
-      "Handled 1000+ concurrent users"
+      "User registration and login system",
+      "Dynamic resume creation and management",
+      "Company job posting portal",
+      "Automatic resume-job matching based on skills and keywords",
+      "Resume preview and download functionality",
+      "Database integration using MySQL"
     ]
   },
   {
     "id": "project-2",
-    "title": "Task Management App",
-    "description": "Collaborative task management tool with real-time updates and team features",
-    "longDescription": "Real-time task management application with team collaboration, project organization, and productivity analytics.",
-    "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=600&fit=crop",
-    "technologies": ["React", "Firebase", "Tailwind CSS", "Redux"],
+    "title": "Multi-Tenant HR & Payroll Management System",
+    "description": "Tech Stack: MERN Stack (MongoDB, Express.js, React.js, Node.js)",
+    "longDescription": "Built a Multi-Tenant HR & Payroll Management System that enables multiple organizations to manage employees, attendance, payroll, and HR operations within a single platform while maintaining separate and secure data for each tenant. Developed RESTful APIs, implemented authentication and role-based access control, and created responsive frontend dashboards for HR management. Designed the system architecture to support scalability and secure tenant-based data isolation.",
+    "image": "https://images.unsplash.com/photo-1556761175-4b46a572b786?w=800&h=600&fit=crop",
+    "technologies": ["MongoDB", "Express.js", "React.js", "Node.js"],
     "links": {
-      "live": "https://example.com",
-      "github": "https://github.com/example"
+      "live": "",
+      "github": ""
     },
     "featured": true,
-    "year": 2023,
-    "achievements": [
-      "5000+ active users",
-      "Real-time sync using WebSockets",
-      "Mobile responsive design"
-    ]
-  },
-  {
-    "id": "project-3",
-    "title": "Weather Dashboard",
-    "description": "Beautiful weather dashboard with real-time data and forecasts",
-    "longDescription": "Interactive weather application providing real-time weather data, forecasts, and personalized alerts.",
-    "image": "https://images.unsplash.com/photo-1592078615290-033ee584e267?w=800&h=600&fit=crop",
-    "technologies": ["React", "OpenWeather API", "Framer Motion", "Tailwind CSS"],
-    "links": {
-      "live": "https://example.com",
-      "github": "https://github.com/example"
-    },
-    "featured": false,
-    "year": 2022,
-    "achievements": [
-      "Smooth animations with Framer Motion",
-      "Accurate weather forecasting",
-      "Cross-platform compatibility"
-    ]
-  },
-  {
-    "id": "project-4",
-    "title": "Social Media Analytics",
-    "description": "Analytics dashboard for social media performance tracking",
-    "image": "https://images.unsplash.com/photo-1460925895917-adf4e565db18?w=800&h=600&fit=crop",
-    "technologies": ["React", "Chart.js", "Node.js", "PostgreSQL"],
-    "links": {
-      "github": "https://github.com/example"
-    },
-    "featured": false,
-    "year": 2022,
-    "achievements": [
-      "Real-time analytics dashboard",
-      "Multi-platform data aggregation"
-    ]
-  },
-  {
-    "id": "project-5",
-    "title": "Portfolio Website",
-    "description": "Premium animated portfolio showcasing web development skills",
-    "image": "https://images.unsplash.com/photo-1517694712202-14319c7be2e2?w=800&h=600&fit=crop",
-    "technologies": ["React", "Vite", "Tailwind CSS", "Framer Motion"],
-    "links": {
-      "live": "https://example.com",
-      "github": "https://github.com/example"
-    },
-    "featured": false,
     "year": 2024,
     "achievements": [
-      "Lighthouse score 98+",
-      "Smooth animations",
-      "Mobile responsive"
-    ]
-  },
-  {
-    "id": "project-6",
-    "title": "Blog Platform",
-    "description": "Full-featured blogging platform with CMS capabilities",
-    "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&h=600&fit=crop",
-    "technologies": ["Next.js", "MDX", "Prisma", "PostgreSQL"],
-    "links": {
-      "live": "https://example.com"
-    },
-    "featured": false,
-    "year": 2023,
-    "achievements": [
-      "Content management system",
-      "SEO optimized"
+      "Multi-tenant architecture for multiple organizations",
+      "Employee management and attendance tracking",
+      "Payroll generation and salary management",
+      "Secure authentication and authorization",
+      "REST API development using Node.js and Express.js",
+      "Responsive frontend dashboard using React.js",
+      "MongoDB database integration for scalable data management"
     ]
   }
 ]

@@ -1,35 +1,26 @@
 import { motion } from 'framer-motion'
 import { FiDownload, FiMail } from 'react-icons/fi'
 import { TypeAnimation } from 'react-type-animation'
-import { containerVariants, itemVariants, fadeInVariants } from '@utils/animationVariants'
+import { containerVariants, itemVariants } from '@utils/animationVariants'
 import Button from '@components/common/Button'
 
 export default function Hero() {
   return (
     <section
       id="hero"
-      className="min-h-screen flex items-center justify-center py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden"
+      className="min-h-screen flex items-center justify-center py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden curved-divider"
+      style={{ backgroundColor: 'var(--bg-main)' }}
     >
-      {/* Background Gradient Blobs */}
+      {/* Background Gradient Blobs (static) */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <motion.div
-          className="absolute w-96 h-96 bg-gradient-to-r from-primary/30 to-secondary/20 rounded-full blur-3xl"
-          animate={{
-            x: [0, 50, -30, 0],
-            y: [0, -30, 50, 0],
-          }}
-          transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' }}
-          style={{ top: '-200px', left: '-100px' }}
-        />
-        <motion.div
-          className="absolute w-96 h-96 bg-gradient-to-r from-accent/20 to-primary/30 rounded-full blur-3xl"
-          animate={{
-            x: [0, -50, 30, 0],
-            y: [0, 30, -50, 0],
-          }}
-          transition={{ duration: 10, repeat: Infinity, ease: 'easeInOut' }}
-          style={{ bottom: '-200px', right: '-100px' }}
-        />
+          <div
+            className="absolute w-72 h-72 bg-gradient-to-r from-primary/30 to-secondary/18 rounded-full blur-3xl"
+            style={{ top: '-120px', left: '-60px' }}
+          />
+          <div
+            className="absolute w-72 h-72 bg-gradient-to-r from-accent/18 to-primary/28 rounded-full blur-3xl"
+            style={{ bottom: '-120px', right: '-60px' }}
+          />
       </div>
 
       <div className="relative z-10 max-w-6xl mx-auto w-full">
@@ -43,29 +34,21 @@ export default function Hero() {
           >
             {/* Greeting */}
             <motion.div variants={itemVariants}>
-              <p className="text-primary font-semibold text-lg">Welcome to my portfolio</p>
+              <p className="text-sm font-medium text-muted">Welcome to my portfolio</p>
             </motion.div>
 
             {/* Main Title */}
             <motion.h1
               variants={itemVariants}
-              className="text-5xl md:text-6xl font-bold leading-tight"
+              className="text-4xl md:text-6xl font-heading leading-tight text-primary"
             >
-              Hi, I'm{' '}
-              <span className="gradient-text">Your Name</span>
+              Hi, I'm <br /><span className="gradient-text">Asreen Sathar</span>
             </motion.h1>
 
             {/* Typing Animation */}
-            <motion.div variants={itemVariants} className="text-2xl md:text-3xl font-semibold">
+            <motion.div variants={itemVariants} className="text-xl md:text-2xl font-semibold text-[#5A1733]/80">
               <TypeAnimation
-                sequence={[
-                  'Frontend Developer',
-                  1500,
-                  'UI/UX Designer',
-                  1500,
-                  'Creative Thinker',
-                  1500,
-                ]}
+                sequence={['MSc Computer Science Student | MERN Stack Learner', 3000]}
                 wrapper="span"
                 cursor={true}
                 repeat={Infinity}
@@ -76,17 +59,22 @@ export default function Hero() {
             {/* Description */}
             <motion.p
               variants={itemVariants}
-              className="text-text-dark/70 dark:text-text-light/70 text-lg leading-relaxed max-w-xl"
+              className="text-muted text-lg leading-relaxed max-w-xl font-body"
             >
-              Passionate about creating beautiful and interactive web experiences with modern technologies. I transform ideas into elegant digital solutions with smooth animations and exceptional UI/UX design.
+              Passionate Computer Science student interested in web development, programming, and modern technologies.
             </motion.p>
 
             {/* CTA Buttons */}
             <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Button variant="primary" size="lg" className="group">
-                <FiDownload className="group-hover:scale-110 transition-transform" />
-                Download CV
-              </Button>
+                <Button
+                  variant="primary"
+                  size="lg"
+                  className="group"
+                  onClick={() => window.open('/resume.pdf', '_blank')}
+                >
+                  <FiDownload className="group-hover:scale-110 transition-transform" />
+                  Download CV
+                </Button>
               <Button
                 variant="outline"
                 size="lg"
@@ -111,81 +99,28 @@ export default function Hero() {
           >
             <motion.div
               variants={itemVariants}
-              className="relative w-80 h-80"
+              className="relative w-80 h-96 flex items-center justify-center"
             >
-              {/* Animated Border */}
-              <motion.div
-                className="absolute inset-0 rounded-full bg-gradient-to-r from-primary via-secondary to-accent opacity-75 blur-lg"
-                animate={{
-                  rotate: 360,
-                  scale: [1, 1.05, 1],
-                }}
-                transition={{
-                  rotate: { duration: 8, repeat: Infinity, ease: 'linear' },
-                  scale: { duration: 3, repeat: Infinity, ease: 'easeInOut' },
-                }}
-              />
+              {/* Asymmetrical rounded container */}
+              <div className="absolute w-[320px] h-[380px] rounded-[40px] bg-[linear-gradient(135deg,#E8A0A8, #F7C6C7)] p-4 transform rotate-6 shadow-lg" />
 
-              {/* Inner Circle */}
-              <div className="absolute inset-2 rounded-full bg-gradient-to-br from-primary/20 to-secondary/10 backdrop-blur-xl flex items-center justify-center overflow-hidden">
-                {/* Placeholder Image - Replace with actual profile photo */}
-                <div className="w-full h-full bg-gradient-to-br from-primary/30 via-secondary/20 to-accent/30 flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="text-6xl mb-2">👩‍💻</div>
-                    <p className="text-sm text-text-dark/70 dark:text-text-light/70">
-                      Profile Photo
-                    </p>
-                  </div>
+              {/* Inner profile holder */}
+              <div className="relative w-64 h-64 rounded-[28px] bg-[var(--bg-section)] flex items-center justify-center overflow-hidden card-premium">
+                {/* Placeholder image circle - keep accessible for later real image */}
+                <div className="w-48 h-48 rounded-2xl overflow-hidden bg-gradient-to-br from-[#F7C6C7]/60 to-[#E8A0A8]/40 flex items-center justify-center">
+                  <svg viewBox="0 0 24 24" className="w-28 h-28 text-[#5A1733] opacity-90" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="8" r="3.5" stroke="currentColor" strokeWidth="1.5" />
+                    <path d="M4 20c1.5-3 4.5-5 8-5s6.5 2 8 5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
                 </div>
               </div>
 
-              {/* Floating Circles */}
-              <motion.div
-                className="absolute -top-8 -right-8 w-24 h-24 bg-accent/20 rounded-full blur-2xl"
-                animate={{
-                  scale: [1, 1.2, 1],
-                  y: [0, -20, 0],
-                }}
-                transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
-              />
-              <motion.div
-                className="absolute -bottom-8 -left-8 w-24 h-24 bg-primary/20 rounded-full blur-2xl"
-                animate={{
-                  scale: [1, 1.2, 1],
-                  y: [0, 20, 0],
-                }}
-                transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }}
-              />
+              {/* Decorative floating blobs */}
+              <div className="blob" style={{ width: 120, height: 120, background: 'rgba(232,160,168,0.18)', top: -40, right: -40 }} />
+              <div className="blob" style={{ width: 80, height: 80, background: 'rgba(90,23,51,0.06)', bottom: -20, left: -40 }} />
             </motion.div>
           </motion.div>
         </div>
-
-        {/* Scroll Indicator */}
-        <motion.div
-          className="absolute bottom-8 left-0 right-0 flex justify-center"
-          animate={{ y: [0, 10, 0] }}
-          transition={{ duration: 2, repeat: Infinity }}
-        >
-          <div className="flex flex-col items-center gap-2 cursor-pointer group" onClick={() => {
-            const aboutSection = document.querySelector('#about')
-            aboutSection?.scrollIntoView({ behavior: 'smooth' })
-          }}>
-            <p className="text-sm text-text-dark/60 dark:text-text-light/60 group-hover:text-primary transition-colors">
-              Scroll to explore
-            </p>
-            <svg
-              className="w-6 h-6 text-primary animate-bounce"
-              fill="none"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-            </svg>
-          </div>
-        </motion.div>
       </div>
     </section>
   )

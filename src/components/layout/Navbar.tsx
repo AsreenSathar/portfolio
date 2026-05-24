@@ -39,11 +39,10 @@ export default function Navbar({ isDark, onThemeToggle }: NavbarProps) {
       {/* Navbar */}
       <motion.nav
         className={cn(
-          'fixed top-0 w-full z-40 transition-all duration-300',
-          scrolled
-            ? 'bg-white/10 dark:bg-black/10 backdrop-blur-md border-b border-white/10'
-            : 'bg-transparent'
+          'fixed top-0 w-full z-40 transition-all duration-300 font-heading',
+          scrolled ? 'backdrop-blur-md shadow-sm' : ''
         )}
+        style={{ backgroundColor: 'var(--bg-main)', borderBottom: '1px solid var(--nav-divider)' }}
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.5 }}
@@ -55,7 +54,7 @@ export default function Navbar({ isDark, onThemeToggle }: NavbarProps) {
               whileHover={{ scale: 1.05 }}
               className="text-2xl font-bold gradient-text cursor-pointer"
             >
-              Portfolio
+              Asreen Sathar
             </motion.div>
 
             {/* Desktop Menu */}
@@ -107,9 +106,10 @@ export default function Navbar({ isDark, onThemeToggle }: NavbarProps) {
         animate={{ opacity: isOpen ? 1 : 0, y: isOpen ? 0 : -20 }}
         transition={{ duration: 0.3 }}
         className={cn(
-          'fixed top-16 left-0 right-0 bg-white/95 dark:bg-black/95 backdrop-blur-lg z-30 md:hidden',
+          'fixed top-16 left-0 right-0 backdrop-blur-lg z-30 md:hidden font-heading',
           isOpen ? 'pointer-events-auto' : 'pointer-events-none'
         )}
+        style={{ backgroundColor: 'var(--bg-main)' }}
       >
         <div className="px-4 py-4 space-y-3">
           {NAV_LINKS.map((link) => (

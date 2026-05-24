@@ -2,8 +2,7 @@ import { useDarkMode } from '@hooks/useDarkMode'
 import Navbar from '@components/layout/Navbar'
 import Footer from '@components/layout/Footer'
 import ScrollProgressBar from '@components/features/ScrollProgressBar'
-import CursorGlow from '@components/features/CursorGlow'
-import ParticlesBg from '@components/features/ParticlesBg'
+// CursorGlow and ParticlesBg removed to disable cursor and background animations
 import Hero from '@components/sections/Hero'
 import About from '@components/sections/About'
 import Skills from '@components/sections/Skills'
@@ -18,8 +17,7 @@ export default function Layout() {
   return (
     <div className="min-h-screen bg-light dark:bg-dark text-text-dark dark:text-text-light transition-colors duration-300">
       {/* Background Effects */}
-      <ParticlesBg />
-      <CursorGlow />
+      {/* Background effects removed */}
       <ScrollProgressBar />
 
       {/* Navigation */}

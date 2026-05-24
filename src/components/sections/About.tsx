@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion'
 import { containerVariants, itemVariants } from '@utils/animationVariants'
 import { useInView } from '@hooks/useInView'
-import Card from '@components/common/Card'
 
 export default function About() {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.2 })
@@ -51,29 +50,11 @@ export default function About() {
                 variants={itemVariants}
                 className="text-text-dark/70 dark:text-text-light/70 text-lg leading-relaxed"
               >
-                I'm a passionate developer and designer with a love for creating beautiful web experiences. With expertise in modern web technologies, I transform complex ideas into elegant solutions.
+                To find a position for myself in an esteemed organization where I could polish my skills and expand my technical horizons. Where all my skills could be put to use for the betterment of both the company and my own self.
+                <p>I am a Computer Science student with a passion for coding and creativity. I have experience in web development, particularly with the MERN stack, and I am always eager to learn new technologies and take on challenging projects.</p>
               </motion.p>
 
-              {/* Stats Cards */}
-              <motion.div variants={containerVariants} className="grid grid-cols-3 gap-4">
-                {[
-                  { number: '50+', label: 'Projects' },
-                  { number: '10+', label: 'Certificates' },
-                  { number: '5', label: 'Years Experience' },
-                ].map((stat, index) => (
-                  <motion.div
-                    key={index}
-                    variants={itemVariants}
-                  >
-                    <Card className="p-4 text-center">
-                      <div className="text-2xl font-bold gradient-text">{stat.number}</div>
-                      <p className="text-sm text-text-dark/60 dark:text-text-light/60 mt-1">
-                        {stat.label}
-                      </p>
-                    </Card>
-                  </motion.div>
-                ))}
-              </motion.div>
+              
             </motion.div>
           </div>
         </motion.div>

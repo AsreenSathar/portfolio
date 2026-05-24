@@ -1,17 +1,17 @@
 // Portfolio Constants
 
-export const SITE_NAME = 'Premium Portfolio'
-export const SITE_DESCRIPTION = 'Premium Animated Portfolio - A showcase of modern web development with elegant design'
+export const SITE_NAME = 'Asreen Sathar'
+export const SITE_DESCRIPTION = 'MSc Computer Science Student | MERN Stack Learner - Portfolio'
 
 // Navigation Links
 export const NAV_LINKS = [
   { id: 'home', label: 'Home', href: '#hero' },
   { id: 'about', label: 'About', href: '#about' },
   { id: 'skills', label: 'Skills', href: '#skills' },
-  { id: 'certificates', label: 'Certificates', href: '#certificates' },
   { id: 'education', label: 'Education', href: '#education' },
+  { id: 'certificates', label: 'Certificates', href: '#certificates' },
   { id: 'projects', label: 'Projects', href: '#projects' },
-  { id: 'contact', label: 'Contact', href: '#contact' },
+  { id: 'lets-talk', label: "Let's talk", href: '#contact' },
 ]
 
 // Colors
@@ -73,7 +73,6 @@ export const FOOTER_LINKS = [
 export const SOCIAL_PLATFORMS = [
   'github',
   'linkedin',
-  'twitter',
   'instagram',
   'email',
   'whatsapp',

@@ -17,11 +17,11 @@ export default function Card({
   gradient = false,
   onClick,
 }: CardProps) {
-  const baseStyles = 'rounded-2xl backdrop-blur-xl overflow-hidden transition-all duration-300'
+  const baseStyles = 'rounded-[28px] backdrop-blur-xl overflow-hidden transition-all duration-300'
 
   const glassStyles = gradient
-    ? 'glass-effect gradient-border shadow-glass'
-    : 'bg-white/10 dark:bg-white/5 border border-white/20 shadow-sm'
+    ? 'glass-effect gradient-border shadow-md-glow'
+    : 'card-premium border border-transparent'
 
   return (
     <motion.div

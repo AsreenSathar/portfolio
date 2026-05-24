@@ -54,15 +54,13 @@ export default function Skills() {
                         <h4 className="font-semibold mb-2">{skill.name}</h4>
                         <div className="w-full bg-white/10 rounded-full h-2 mt-auto">
                           <motion.div
-                            className="h-full bg-gradient-to-r from-primary to-accent rounded-full"
+                            className="h-full rounded-full progress-moving"
                             initial={{ width: 0 }}
                             animate={inView ? { width: `${skill.level * 10}%` } : { width: 0 }}
                             transition={{ duration: 0.8, delay: 0.2 }}
                           />
                         </div>
-                        <p className="text-xs text-text-dark/60 dark:text-text-light/60 mt-2">
-                          {skill.level}/10
-                        </p>
+                        <p className="text-xs text-text-dark/60 dark:text-text-light/60 mt-2">{skill.level}/10</p>
                       </Card>
                     </motion.div>
                   )

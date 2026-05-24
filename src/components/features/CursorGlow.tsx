@@ -2,7 +2,6 @@ import { useEffect, useRef, useState } from 'react'
 
 export default function CursorGlow() {
   const cursorRef = useRef<HTMLDivElement>(null)
-  const [position, setPosition] = useState({ x: 0, y: 0 })
   const [isVisible, setIsVisible] = useState(true)
 
   useEffect(() => {
@@ -21,8 +20,6 @@ export default function CursorGlow() {
     }
 
     const handleMouseMove = (e: MouseEvent) => {
-      setPosition({ x: e.clientX, y: e.clientY })
-
       if (cursorRef.current) {
         cursorRef.current.style.left = `${e.clientX}px`
         cursorRef.current.style.top = `${e.clientY}px`
@@ -48,11 +45,9 @@ export default function CursorGlow() {
   return (
     <div
       ref={cursorRef}
-      className="pointer-events-none fixed w-8 h-8 -translate-x-1/2 -translate-y-1/2 z-40"
+      className="pointer-events-none fixed w-3 h-3 -translate-x-1/2 -translate-y-1/2 z-40 rounded-full"
       style={{
-        background: 'radial-gradient(circle, rgba(159,122,234,0.5) 0%, rgba(159,122,234,0) 70%)',
-        filter: 'blur(8px)',
-        boxShadow: '0 0 30px rgba(159, 122, 234, 0.6), 0 0 60px rgba(200, 162, 200, 0.3)',
+        background: 'rgba(159,122,234,0.9)'
       }}
     />
   )

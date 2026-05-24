@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion'
+import { motion, type MotionProps } from 'framer-motion'
 import { cn } from '@utils/cn'
 import { buttonHoverVariants } from '@utils/animationVariants'
 
@@ -17,23 +17,23 @@ export default function Button({
   className,
   disabled,
   ...props
-}: ButtonProps & { [key: string]: any }) {
+}: ButtonProps & MotionProps) {
   const baseStyles =
-    'font-semibold rounded-lg transition-all duration-300 flex items-center justify-center gap-2 font-medium'
+    'font-semibold rounded-full transition-all duration-300 flex items-center justify-center gap-3 font-medium'
 
   const variantStyles = {
     primary:
-      'bg-gradient-to-r from-primary to-secondary text-white hover:shadow-glow disabled:opacity-50',
-    secondary: 'bg-secondary/20 text-secondary hover:bg-secondary/30 disabled:opacity-50',
+      'bg-gradient-to-r from-[#E8A0A8] to-[#F7C6C7] text-[#5A1733] hover:shadow-glow-accent transform-gpu hover:-translate-y-0.5 disabled:opacity-50',
+    secondary: 'bg-[#FFF9F5] text-[#5A1733] hover:shadow-sm disabled:opacity-50',
     outline:
-      'border-2 border-primary text-primary hover:bg-primary/10 disabled:opacity-50',
-    ghost: 'text-primary hover:bg-primary/10 disabled:opacity-50',
+      'border-2 border-[#E8A0A8] text-[#5A1733] hover:bg-[#FFF9F5] disabled:opacity-50',
+    ghost: 'text-[#5A1733] hover:bg-[#FFF9F5] disabled:opacity-50',
   }
 
   const sizeStyles = {
     sm: 'px-4 py-2 text-sm',
     md: 'px-6 py-2.5 text-base',
-    lg: 'px-8 py-3 text-lg',
+    lg: 'px-6 py-3 text-lg',
   }
 
   return (

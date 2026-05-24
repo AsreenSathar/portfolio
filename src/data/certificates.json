@@ -1,52 +1,27 @@
 [
   {
     "id": "cert-1",
-    "name": "React Advanced Patterns",
-    "issuer": "Frontend Masters",
-    "issueDate": "2023-06",
-    "icon": "FaReact",
-    "link": "https://frontendmasters.com"
+    "name": "On Job Training",
+    "issuer": "Custard Apple Animation Private Limited, Pune",
+    "issueDate": "2026-03",
+    "endDate": "2026-04",
+    "icon": "FaBriefcase",
+    "link": "#"
   },
   {
     "id": "cert-2",
-    "name": "Web Performance",
-    "issuer": "Google Cloud Skills Boost",
-    "issueDate": "2023-05",
-    "icon": "FaGoogle",
-    "link": "https://google.com"
+    "name": "C Programming Certificate",
+    "issuer": "Sololearn",
+    "issueDate": "2025-01",
+    "icon": "SiC",
+    "link": "https://www.sololearn.com"
   },
   {
     "id": "cert-3",
-    "name": "Full Stack JavaScript",
-    "issuer": "Codecademy",
-    "issueDate": "2023-03",
-    "icon": "SiJavascript",
-    "link": "https://codecademy.com"
-  },
-  {
-    "id": "cert-4",
-    "name": "AWS Solutions Architect",
-    "issuer": "Amazon Web Services",
-    "issueDate": "2023-08",
-    "expiryDate": "2025-08",
-    "icon": "FaAws",
-    "link": "https://aws.amazon.com"
-  },
-  {
-    "id": "cert-5",
-    "name": "Google UX Design",
-    "issuer": "Google Career Certificates",
-    "issueDate": "2023-02",
-    "icon": "FaGoogle",
-    "link": "https://google.com"
-  },
-  {
-    "id": "cert-6",
-    "name": "Docker Certified Associate",
-    "issuer": "Docker",
-    "issueDate": "2023-04",
-    "expiryDate": "2025-04",
-    "icon": "SiDocker",
-    "link": "https://docker.com"
+    "name": "Artificial Intelligence Certification",
+    "issuer": "Aspire For Her",
+    "issueDate": "2024-11",
+    "icon": "SiOpenai",
+    "link": "#"
   }
 ]
