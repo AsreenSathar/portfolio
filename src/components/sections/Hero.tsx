@@ -70,7 +70,7 @@ export default function Hero() {
                   variant="primary"
                   size="lg"
                   className="group"
-                  onClick={() => window.open('/resume.pdf', '_blank')}
+                  onClick={() => window.open('/laxman_gurav_resume.pdf', '_blank')}
                 >
                   <FiDownload className="group-hover:scale-110 transition-transform" />
                   Download CV
